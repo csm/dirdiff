@@ -17,7 +17,7 @@ that this manifest keeps:
   1. A list of file names, file attributes, and references to hashed data blocks
   that compose the file.
   2. A big list of block hash info, across all files in the directory. We want that
-  because we want to 
+  because we want to track similar data across files.
 2. When generating a patch, we scan the entire block space across all files, but we
 also include the new file information (which might include new file names that were
 not in the original, but with similar contents, and file names that have been removed).
